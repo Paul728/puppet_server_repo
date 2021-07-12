@@ -9,6 +9,6 @@ node 'agent01.pault.it' {
 node 'agent02.pault.it' {
   file{ '/root/README':
     ensure => file,
-    content => $fqdn,
+    content => "Welcome to ${fqdn}\n",
   }
 }
